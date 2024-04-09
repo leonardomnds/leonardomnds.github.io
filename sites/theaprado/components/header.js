@@ -3,7 +3,7 @@ class HeaderComponent extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
 
-    fetch('components/header/index.html')
+    fetch('components/templates/header.html')
       .then((response) => response.text())
       .then((html) => this.shadowRoot.innerHTML = html);
   }
