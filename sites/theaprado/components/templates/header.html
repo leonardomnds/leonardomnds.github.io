@@ -1,31 +1,51 @@
 <style>
-  /* Estilos para o cabeçalho */
+  header {
+    --header-size: 125px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: var(--header-size);
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+
+  .logo-container {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo-container img {
+    /* max-height: var(--header-size); */
+    height: 300px;
+    align-self: stretch;
+  }
+
   nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline;
-    margin-right: 10px;
-  }
-
-  a {
-    color: #fff;
-    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 4px;
   }
 </style>
 
-<nav>
-  <ul>
-    <li><a href="#">Página Inicial</a></li>
-    <li><a href="#">Sobre</a></li>
-    <li><a href="#">Contato</a></li>
-  </ul>
-</nav>
+<header>
+  <div class="logo-container">
+    <a href="/sites/theaprado/index.html">
+      <img src="/sites/theaprado/assets/img/logo.jpg" alt="Logo">
+    </a>
+  </div>
+
+  <nav>
+    <a href="#">Equipe</a>
+    <a href="#">Portifólio</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
