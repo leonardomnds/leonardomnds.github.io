@@ -1,6 +1,6 @@
 <style>
   header {
-    --header-size: 125px;
+    --header-size: 360px;
     box-sizing: border-box;
     position: fixed;
     width: 100%;
@@ -20,9 +20,7 @@
   }
 
   .logo-container img {
-    /* max-height: var(--header-size); */
-    height: 300px;
-    align-self: stretch;
+    max-height: var(--header-size);
   }
 
   nav {
@@ -30,8 +28,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    padding-top: 24px;
     gap: 4px;
+  }
+
+  nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
   }
 </style>
 
